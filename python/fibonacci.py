@@ -22,11 +22,11 @@ def f(n):
 
 # Prints the average time it takes to calculate f(n)
 def track_execution_speed():
-    print("Average time to execute f(100) in nanoseconds\n")
+    print("Average time to execute f(90) in nanoseconds\n")
     for i in range(200):
         start_time = time.time()
         for j in range(50):
-            f(100)
+            f(90)
         total_time = time.time() - start_time
         print(1e+9 * total_time/50)
 

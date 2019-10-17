@@ -30,11 +30,11 @@ func f(n int) int {
 
 // Prints the average time it takes to calculate f(n)
 func trackExecutionSpeed() {
-	println("Average time to execute f(100) in nanoseconds")
+	println("Average time to execute f(90) in nanoseconds")
 	for i := 0; i < 200; i++ {
 		startTime := time.Now()
 		for j := 0; j < 50; j++ {
-			f(100)
+			f(90)
 		}
 		totalTime := time.Since(startTime)
 		println(totalTime.Nanoseconds() / 50.0)
